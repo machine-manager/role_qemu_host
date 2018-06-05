@@ -10,6 +10,7 @@ defmodule RoleQemuHost do
 				"virt-manager",          # for managing qemu-based VMs and starting them at boot
 				"libvirt-daemon-system", # for managing qemu-based VMs and starting them at boot
 				"qemu-system-x86",       # for running qemu VMs
+				"qemu-system-gui",
 				"ovmf",                  # for UEFI-based qemu VMs
 			],
 			post_install_unit: %All{units: [
